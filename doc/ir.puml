@@ -1,16 +1,43 @@
 @startuml IR
 
 class IR {
-  +alveolus Alveolus[]
+  alveolus Alveolus[]
 }
 enum Alveolus {
   Larvie
 }
+enum Flora {
+  Int
+  Str
+  Bool
+  Bug
+}
+enum Seal {
+' NotNull
+    Vital
+' PrimaryKey
+    Core
+' Unique
+    Root
+}
+
 class Larvie {
-  + primor Str
+  primor Str
+  casts Casts[]
+}
+
+class Casts {
+  primor Str
+  flora Flora
+  seal Seal
 }
 
 IR --> Alveolus
 Alveolus --> Larvie
+
+Casts --> Flora
+Casts --> Seal
+
+Larvie --> Casts
 @enduml
 
