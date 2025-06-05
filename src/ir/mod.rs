@@ -1,5 +1,8 @@
 mod alveolus;
 mod larvie;
+mod flora;
+mod seal;
+mod casts;
 
 use sc_dsl::dsl::ast::genome::Genome;
 use sc_dsl::dsl::ast::anatomy::Anatomy;
