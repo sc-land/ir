@@ -1,0 +1,8 @@
+[package]
+name = "ir"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+sc_dsl = { git = "https://github.com/sc-land/dsl.git", branch = "feat/ast-implementation-se-de" }
+serde = { version = "1.0.219", features = ["derive"] }
