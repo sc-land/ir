@@ -24,12 +24,17 @@ enum Seal {
 class Larvie {
   primor Str
   casts Casts[]
+  instincts Instinct[]
 }
 
 class Casts {
   primor Str
   flora Flora
   seal Seal
+}
+
+class Instinct {
+  echo Str
 }
 
 IR --> Alveolus
@@ -39,5 +44,6 @@ Casts --> Flora
 Casts --> Seal
 
 Larvie --> Casts
+Larvie --> Instinct
 @enduml
 
