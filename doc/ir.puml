@@ -1,0 +1,16 @@
+@startuml IR
+
+class IR {
+  +alveolus Alveolus[]
+}
+enum Alveolus {
+  Larvie
+}
+class Larvie {
+  + primor Str
+}
+
+IR --> Alveolus
+Alveolus --> Larvie
+@enduml
+
